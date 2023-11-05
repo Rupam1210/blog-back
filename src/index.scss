@@ -1,0 +1,582 @@
+ @import "mixin";
+ *{
+    margin: 0;
+    padding: 0;
+    padding-right: 0;
+     box-sizing: border-box;
+    
+    a{
+        text-decoration: none;
+    }
+    
+ }
+ .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px  ;
+    width: 100%;
+   
+    gap: 20px;
+    background-color: rgb(33, 52, 221);
+    @include md{
+        padding: 10px 200px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: white;
+        
+    }
+    .title{
+        font-size: 28px;
+         
+
+        
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        svg{
+            color: white;
+        }
+        >p{
+            font-size: 15px;
+            @include md{
+                font-size: 20px;
+            }
+        }
+        input{
+            border: none;
+            outline: none;
+            padding: 3px;
+            background: transparent;
+            color: white;
+        }
+    }
+    .menu{
+        padding: 0 12px ;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        @include md{
+            display: none;
+        }
+    }
+    .box{
+        display: none;
+        gap: 15px;
+        
+         
+        @include md{
+            display: flex;
+
+        }
+        a{
+            font-size: 20px;
+            font-weight: 300;
+            &:hover{
+                 
+                color: rgb(244, 94, 94);
+            }
+
+        }
+        @include md{
+            gap: 25px;
+            .bar{
+                width: 5rem;
+                
+                a{
+                    font-size: 13px;
+
+                }
+            }
+        }
+       
+       
+    }
+ }
+ .homepost{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    padding: 0 2rem;
+    gap: 2rem;
+    .image{
+        width: 35%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .right{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-weight: bold;
+            font-size: 25px;
+            
+            margin-bottom: 5px;
+            @include md{
+                font-size: 30px;
+            }
+
+        }
+        .textblock{
+            display: flex;
+            justify-content: space-between;
+            color: grey;
+            margin-bottom: 1rem;
+            font-size: 15px;
+            @include md{
+                font-size: 18px;
+            }
+            .date{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                font-size: 12px;
+                @include md{
+                    flex-direction: row;
+                    font-size: 18px;
+                }
+            }
+        }
+        .description{
+            font-size: medium;
+            @include md{
+                font-size: large;
+            }
+        }
+    }
+ }
+ .home{
+    padding: 0 8px;
+    min-height: 80vh;
+    
+    @include md{
+        padding: 0 200px;
+    }
+ }
+ .para{
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+ }
+ .footer{
+    background-color: black;
+    margin-top: 20px;
+    padding: 20px 20px;
+    color: white;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    @include md{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px 300px;
+        font-size: 14px;
+        gap: 20px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+ }
+ .login{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        width: 80%;
+        
+        @include md{
+            width: 25%;
+        }
+        h1{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            
+        }
+        input{
+            border: 2px solid black;
+            padding: 10px ;
+            transition: border-radius 1s linear ;
+           &:hover{
+            border-radius: 100px;
+            
+           }
+            
+
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: 14px;
+            border-radius: 15px;
+            width: 100%;
+            border: 0;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            &:hover{
+                background-color: gray;
+                color: black;
+            }
+        }
+        .new{
+            display: flex ;
+            justify-content: center;
+            gap: 6px;
+            font-weight: 500;
+            a{
+                color: gray;
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+ }
+ .custom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px 3rem ;
+    h1 >a{
+        color: black;
+    }
+    @include md{
+        padding: 10px 10rem;
+    }
+    a{
+        color: gray;
+        font-weight: bold;
+    }
+
+
+ }
+//  commets
+ .block{
+    margin: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include md{
+        margin: 3rem 12rem;
+    }
+    .box{
+        display: flex;
+        justify-content: space-between;
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 30px;
+            @include md{
+                font-size: 40px;
+            }
+        }
+        .icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+            @include md{
+                font-size: 30px;
+            }
+        }
+       
+    }
+    .textbox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1px;
+        color: grey;
+        margin-bottom: 18px;
+        .date{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 15px;
+            @include md{
+                font-size: 25px;
+            }
+        }
+    }
+    img{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        @include md{
+            height: 80%;
+            width: 100%;
+        }
+    }
+    .desc{
+        line-height: 1.2rem;
+        @include md{
+            font-size: 20px;
+            line-height: 2rem;
+        }
+        
+    }
+    .category{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin: 2rem 0;
+        
+        .cbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            .item{
+                background-color: rgb(186, 177, 177);
+                border-radius: 5px;
+                padding: 3px 6px;
+            }
+        }
+    }
+    .comments{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        h3{
+            font-weight: bold;
+        }
+    }
+    .commentitem{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        @include md{
+            flex-direction: row;
+        }
+        input{
+            width: 100%;
+            padding: 1.5rem 1rem;
+            border: none;
+            outline: none;
+            @include md{
+                width: 80%;
+            }
+        }
+        button{
+            width: 100%;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            border-radius: 10px;
+            padding: 1rem;
+            border: none;
+            @include md{
+                width: 20%;
+            }
+        }
+    }
+     
+ }
+ .post{
+    width: 100%;
+    margin-top: 10px;
+    padding: 30px 20px ;
+    @include md{
+        padding: 20px 200px;
+    }
+     
+    h1{
+        font-weight: bold;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        
+        input{
+            padding: 20px 10px;
+            border: none;
+            outline: none;
+        }
+        textarea{
+            outline: none;
+            border: none;
+            padding: 10px 2px;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: 7px 14px;
+            font-size: 18px;
+            
+            @include md{
+                width: 20%;
+                font-size: 20px;
+            }
+             
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+             
+            .add{
+                display: flex;
+                align-items: center;
+                 margin-left: 10px;
+                 margin-bottom: 10px;
+                gap: 1rem;
+                input{
+                    border: 1px solid black;
+                    padding: 10px 10px;
+                    
+                }
+                .button{
+                    background-color: black;
+                    color: white;
+                    padding: 8px 12px;
+                    border-radius: 5px;
+                }
+            }
+            .categorynames{
+                display: flex;
+                align-items: center;
+                 
+                gap: 1rem;
+                margin-top: 4px;
+                margin-bottom: 10px;
+                padding: 0 8px ;
+                .item{
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(210, 210, 210);
+                    padding: 6px 10px;
+                    gap: 0.5rem;
+                    border-radius: 5px;
+                     
+                    svg{
+                        background-color: black;
+                        color: white;
+                        border-radius: 50%;
+                        padding: 2px 4px;
+                        cursor: pointer;
+                    }
+                    
+                }
+            }
+            
+
+        }
+    }
+ }
+//  profile
+.profile{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+
+    @include md{
+        flex-direction: row-reverse;
+        justify-content: center;
+         
+    
+    }
+    .post{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        @include md{
+            width: 80%;
+            margin-top: 15px;
+        }
+        .title{
+            font-weight: bold;
+            margin-bottom: 4px;
+            padding-left: 22px;
+        }
+      
+    }
+    .container{
+        padding: 10px 45px ;
+        margin-top: 3rem;
+        
+        
+
+
+        @include md{
+            width: 20%;
+            position: sticky;
+            padding: 0;
+            
+            
+        }
+        input{
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+        }
+        .inputfield{
+            position: sticky;
+            display: flex;
+            flex-direction: column;
+            
+            gap: 10px;
+            h1{
+                font-weight: bold;
+                margin-bottom: 10px
+            }
+            .buttons{
+                display: flex;
+                gap: 14px;
+                button{
+                    background-color: black;
+                    color: white;
+                    padding: 7px 10px;
+                    font-weight: 500;
+                    border: none;
+                    border-radius: 5px;
+                    margin-top: 0.5rem;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: grey;
+                    }
+                }
+            }
+        }
+      
+    }
+}
+.myblog{
+    min-height: 80vh;
+    padding: 0 40px  ;
+    margin-top: 2rem;
+    @include md{
+        padding:  0 200px;
+    }
+
+}
