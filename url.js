@@ -1,2 +1,2 @@
-export const URL="https://blog-appp-hv69.onrender.com"
-export const IF="https://blog-appp-hv69.onrender.com/images/"
+export const URL="https://blog-app-t3ed.onrender.com"
+export const IF="https://blog-app-t3ed.onrender.com/images/"
