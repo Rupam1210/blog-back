@@ -1,2 +1,2 @@
-export const URL="http://localhost:5000"
-export const IF="http://localhost:5000/images/"
+export const URL="https://blog-appp-hv69.onrender.com/"
+export const IF="https://blog-appp-hv69.onrender.com//images/"
