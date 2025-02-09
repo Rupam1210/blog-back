@@ -28,9 +28,9 @@ function App() {
         <Route exact path='/login' element={<Login/>}/>
         <Route exact path='/register' element={<Register/>}/>
         <Route exact path='/write' element={
-        <Protected>
+  
           <Createpost/>
-        </Protected>
+        
        }/>
         <Route exact path='/profile' element={
    
