@@ -13,7 +13,7 @@ import Profile from './pages/Profile'
 import { UserContextProvider } from './context/UserContext'
 import { Toaster } from 'react-hot-toast'
 import Myblog from './pages/Myblog'
-import Protected from './component/Protected'
+ 
 
 function App() {
    
@@ -33,23 +33,23 @@ function App() {
         </Protected>
        }/>
         <Route exact path='/profile' element={
-            <Protected>
+   
                 <Profile/>
-          </Protected>
+          
        
         }/>
-        <Route exact path='/posts/post/:id' element={ <Protected>
+        <Route exact path='/posts/post/:id' element={  
           <Postdetails/>
-               </Protected>
+                
         }/>
         <Route exact path='/myblogs/:id' element={
-         <Protected>
+ 
                <Myblog/>
-         </Protected>}/>
+         }/>
         <Route exact path='/edit/:id' element={
-         <Protected>
+      
                <Editpost/>
-         </Protected>}/>
+        }/>
       </Routes>
       
        <Toaster/>
