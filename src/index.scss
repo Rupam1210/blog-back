@@ -580,6 +580,53 @@
     }
 
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+$primary-color: #2c3e50;
+$background-color: #f4f6f9;
+$button-color: #3498db;
+$text-color: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ 
+
+// Responsive Design
+@media (max-width: 500px) {
+  .login-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+$primary-color: #2c3e50;
+$background-color: #f4f6f9;
+$card-bg: #ffffff;
+$text-color: #333;
+$accent-color: #3498db;
+$border-radius: 10px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog-container {
+  width: 100%;
+  background: $background-color;
+  min-height: 100vh;
+  padding: 20px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
