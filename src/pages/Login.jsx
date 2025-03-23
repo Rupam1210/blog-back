@@ -32,7 +32,7 @@ const Login = () => {
   return (
     <>
     <div className="custom">
-        <h1><Link to={"/"}>Blog Market</Link></h1>
+        <h1><Link to={"/"}>ThoughtGrid</Link></h1>
         <Link to={"/register"}>Register</Link>
     </div>
      <div className="login">
