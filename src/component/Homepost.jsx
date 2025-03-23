@@ -21,7 +21,7 @@ const Homepost = ({post}) => {
                     <p>{new Date(post.updatedAt).toString().slice(16,24)}</p>
                 </div>
             </div>
-            <p className="description"> {post.desc.slice(0,200)+"...Read more"} </p>
+            <p className="description"> {post.desc.slice(0,100)+"...Read more"} </p>
             </div>
 
     </div>
